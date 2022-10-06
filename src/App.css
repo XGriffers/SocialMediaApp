@@ -49,3 +49,7 @@
   border: 1px solid var(--black);
   background: transparent;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
