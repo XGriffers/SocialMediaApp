@@ -1,6 +1,6 @@
 import React from 'react'
 import PostSide from '../../Components/PostSide/PostSide'
-import { ProfileSide } from '../../Components/ProfileSide/ProfileSide'
+import ProfileSide from '../../Components/ProfileLeft/ProfileLeft'
 import RightSide from '../../Components/RightSide/RightSide'
 
 import './Home.css'
