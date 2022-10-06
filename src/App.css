@@ -2,6 +2,7 @@
   --yellow: #f5c32c;
   --orange: #fca61f;
   --black: #000;
+  --white: #fff;
   --gray: rgba(36, 45, 73, 0.65);
   --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
   --hrColor: #cfcdcd;
@@ -28,4 +29,23 @@
   border-radius: 50%;
   background: #d64c42;
   filter: blur(72px);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  border: none;
+  border-radius: .5rem;
+  background: var(--buttonBg);
+  transition: all 100ms ease-out;
+
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--black);
+  border: 1px solid var(--black);
+  background: transparent;
 }
