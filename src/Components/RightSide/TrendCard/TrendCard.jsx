@@ -4,7 +4,7 @@ import './TrendCard.css'
 import { TrendData } from '../../../Data/TrendData'
 const TrendCard = () => {
     return (
-        <div className="TrendCard">
+        <div className="TrendCard StickyBox">
             <h3>Trends for you</h3>
             {TrendData.map((trend) => {
                 return (
