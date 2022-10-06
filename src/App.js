@@ -1,5 +1,6 @@
 import "./App.css"
-import { Home } from "./Pages/Home/Home";
+//import { Home } from "./Pages/Home/Home";
+import { Profile } from "./Pages/Profile/Profile";
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       </div>
       <div class="blur" style={{top: '36%', left: '-8rem'}}>
       </div>
-      <Home/>
+      {/* <Home/> */}
+      <Profile/>
     </div>
   );
 }
