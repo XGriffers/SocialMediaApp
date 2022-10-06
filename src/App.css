@@ -1,7 +1,7 @@
 :root {
   --yellow: #f5c32c;
   --orange: #fca61f;
-  --black: #242d49;
+  --black: #000;
   --gray: rgba(36, 45, 73, 0.65);
   --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
   --hrColor: #cfcdcd;
@@ -11,5 +11,21 @@
   --photo: #4CB256;
   --video: #4A4EB7;
   --location: #EF5757;
---shedule: #E1AE4A;
+  --shedule: #E1AE4A;
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+  background-color: #f3f3f3;
+  padding: 1rem 1rem;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #d64c42;
+  filter: blur(72px);
 }
