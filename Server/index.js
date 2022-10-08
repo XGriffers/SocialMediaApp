@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 //Routers Import
 import AuthRoute from './Routes/AuthRoute.js';
 import UserRoute from './Routes/UserRoute.js';
+import PostRoute from './Routes/PostRoute.js';
 
 //Middleware
 const app = express();
@@ -20,3 +21,4 @@ console.log("Listening"))).catch((error)=>console.log(error));
 //useage of routes
 app.use('/auth', AuthRoute)
 app.use('/user', UserRoute)
+app.use('/post', PostRoute)
