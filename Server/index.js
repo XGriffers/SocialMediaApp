@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 
 //Routers Import
 import AuthRoute from './Routes/AuthRoute.js';
+import UserRoute from './Routes/UserRoute.js';
 
 //Middleware
 const app = express();
@@ -18,3 +19,4 @@ console.log("Listening"))).catch((error)=>console.log(error));
 
 //useage of routes
 app.use('/auth', AuthRoute)
+app.use('/user', UserRoute)
