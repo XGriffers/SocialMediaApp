@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import ProfileImage from "../../../img/profileImg.jpg";
 import "./PostShare.css";
-import { UilScenery } from "@iconscout/react-unicons";
-import { UilPlayCircle } from "@iconscout/react-unicons";
-import { UilLocationPoint } from "@iconscout/react-unicons";
-import { UilSchedule } from "@iconscout/react-unicons";
-import { UilTimes } from "@iconscout/react-unicons";
+import { HiOutlinePhotograph } from "react-icons/hi";
+import { HiPlay } from "react-icons/hi";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { HiCalendar } from "react-icons/hi";
+import { HiX } from "react-icons/hi";
 
 
 const PostShare = () => {
@@ -29,19 +29,19 @@ const PostShare = () => {
                     <div className="option" style={{ color: "var(--photo)" }}
                         onClick={() => imageRef.current.click()}
                     >
-                        <UilScenery />
+                        <HiOutlinePhotograph />
                         Photo
                     </div>
                     <div className="option" style={{ color: "var(--video)" }}>
-                        <UilPlayCircle />
+                        <HiPlay />
                         Video
                     </div>{" "}
                     <div className="option" style={{ color: "var(--location)" }}>
-                        <UilLocationPoint />
+                        <HiOutlineLocationMarker />
                         Location
                     </div>{" "}
                     <div className="option" style={{ color: "var(--schedule)" }}>
-                        <UilSchedule />
+                        <HiCalendar />
                         Schedule
                     </div>
                     <button className="button ps-button">Share</button>
@@ -57,7 +57,7 @@ const PostShare = () => {
                 {image && (
 
                     <div className="previewImage">
-                        <UilTimes onClick={() => setImage(null)} />
+                        <HiX onClick={() => setImage(null)} />
                         <img src={image.image} alt="" />
                     </div>
 

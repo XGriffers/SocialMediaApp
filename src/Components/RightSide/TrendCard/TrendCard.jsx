@@ -1,5 +1,6 @@
 import React from 'react'
 import './TrendCard.css'
+import { HiHashtag } from 'react-icons/hi';
 
 import { TrendData } from '../../../Data/TrendData'
 const TrendCard = () => {
@@ -9,7 +10,7 @@ const TrendCard = () => {
             {TrendData.map((trend) => {
                 return (
                     <div className="trend">
-                        <span>#{trend.name}</span>
+                        <span><HiHashtag />{trend.name}</span>
                         <span>{trend.shares}k shares</span>
                     </div>
                 )
