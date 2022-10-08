@@ -1,9 +1,9 @@
 import React from 'react'
 import './Post.css'
-import Comment from '../../../img/comment.png'
-import Share from '../../../img/share.png'
-import Heart from '../../../img/like.png'
-import NotLike from '../../../img/notlike.png'
+import { HiOutlineChatAlt } from 'react-icons/hi'
+import { HiOutlineShare } from 'react-icons/hi'
+import { HiOutlineHeart } from 'react-icons/hi'
+
 
 
 const Post = ({ data }) => {
@@ -13,9 +13,9 @@ const Post = ({ data }) => {
 
 
             <div className="postReact">
-                <img src={data.liked ? Heart : NotLike} alt="" />
-                <img src={Comment} alt="" />
-                <img src={Share} alt="" />
+                <HiOutlineHeart cursor="pointer" />
+                <HiOutlineChatAlt cursor="pointer" />
+                <HiOutlineShare cursor="pointer" />
             </div>
 
 

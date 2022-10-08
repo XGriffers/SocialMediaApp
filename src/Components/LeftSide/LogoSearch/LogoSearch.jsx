@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../../img/logo.png'
-import { UilSearch } from '@iconscout/react-unicons'
+import { HiSearch } from "react-icons/hi";
 import './LogoSearch.css'
 
 
@@ -11,7 +11,7 @@ export const LogoSearch = () => {
             <div className="Search">
                 <input type="text" placeholder='Search' />
                 <div className="s-icon">
-                    <UilSearch />
+                    <HiSearch />
                 </div>
             </div>
         </div>

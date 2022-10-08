@@ -1,5 +1,5 @@
 import React from 'react'
-import FollowersCard from '../ProfileSide/FollowersCard/FollowersCard'
+import FollowersCard from '../FollowersCard/FollowersCard'
 import { LogoSearch } from './LogoSearch/LogoSearch'
 import ProfileCard from './ProfileCard/ProfileCard'
 
@@ -14,3 +14,4 @@ export const ProfileSide = () => {
         </div>
     )
 }
+export default ProfileSide

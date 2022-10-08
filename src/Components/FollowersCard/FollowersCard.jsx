@@ -1,5 +1,6 @@
 import React from 'react'
 import './FollowersCard.css'
+import { HiOutlineAtSymbol } from 'react-icons/hi'
 
 import { Followers } from '../../Data/FollowersData'
 const FollowersCard = () => {
@@ -14,7 +15,7 @@ const FollowersCard = () => {
                             <img src={follower.img} alt="" className='followerImage' />
                             <div className="name">
                                 <span>{follower.name}</span>
-                                <span>@{follower.username}</span>
+                                <span><HiOutlineAtSymbol /> {follower.username}</span>
                             </div>
                         </div>
                         <button className='button fc-button'>
